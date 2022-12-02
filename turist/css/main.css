@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     height: 100px;
-    background-color: aqua;
+    background-color:#98FB98 ;
 }
 
 .search {
@@ -61,12 +61,44 @@ header{
     margin: auto;
     width: 100%;  
 }
-.circles{
-    margin-left: 600px;
+
+.infographic p{
+    z-index: 1;
 }
 
-.circles img{
+.main-page-hike-search-form{
+    display: flex;
 
+}
+
+.circles{
+    margin-left: 600px;
+    display: flex;
+
+    
+}
+
+
+
+.circles img{
+    width: 300px;
+    height: inherit;
+    position: relative;
+    right: 300px;
+
+}
+
+.circles p {
+    position: relative;
+    right: 210px;
+    top: 145px;
+
+}
+
+.text {
+    position: relative;
+    left: -160px;
+    top: 100px;
 }
 
 .ellipse{
@@ -77,8 +109,10 @@ header{
     transform: scale(1.2);
 }
 
-.arrow_img {
+.circles.arrow_img {
     margin-bottom: 30px;
+    position: relative;
+    top: 40px;
 }
 
 h1 {
@@ -96,6 +130,7 @@ h1 {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: #E8EFF5;
 }
 
 .box-feedback
@@ -113,7 +148,7 @@ h1 {
 }
 .feedback{
     background-color: #F7F7F7;
-    color:#999999;
+    color:#747474;
     font-size: 14px;
     line-height: 21px;
     padding: 31px 30px;
@@ -136,9 +171,11 @@ h2{
 .main_page_filter{
     width: 1240px;
     margin: 0 auto 81px;
-    background:#FFC0CB;
+    background:#70b17b;
     border-radius: 10px;
     position: relative;
+    height: 300px;
+
 }
 
 .main_page_filter::after{
@@ -153,9 +190,7 @@ h2{
     padding: 0;
     width: 235px;
 }
-section {
-    display: block;
-}
+
 
 div{
     font-size: 100%;
@@ -184,6 +219,18 @@ body {
     white-space: nowrap;
 }
 
+
+.number{
+    position: relative;
+    top: -323px;
+    left: 500px;
+    font: 600 16px/1.4 "Open Sans";
+    color: #38322f;
+    text-transform: uppercase;
+    padding: 0 0 11px;
+}
+
+
 .main_page_filter_box_field label {
     display: block;
     font: 600 16px/1.4 "Open Sans";
@@ -205,6 +252,7 @@ body {
     font: 14px/1.2 "Open Sans";
     color: #5e5e5e;
     text-align: center;
+    padding-right: 1300px;
 }
 
 label{
@@ -216,13 +264,52 @@ label{
     width: 178px;
 }
 
+.field-routesearch {
+    position: relative;
+    left: 800px;
+    bottom: 375px;
+
+}
+
+
+
 .main_page_filter_col.third_wid {
     padding-left: 45px;
     width: 285px;
 }
 
+.btn {
+    position: relative;
+    left: 500px;
+    bottom: 200px;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    border-radius: 4px;
+    color: #555555;
+    display:block;
+    width:120px;
+    margin: 20px auto;
+    font-size: 14px;
+    text-align:center;
+    height: 30px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    text-decoration:none;
+
+}
+
+.btn:hover, .btn:focus{
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+}
+
 .main_page_filter_content{
     padding: 30px 0 0;
+    display: flex;
 }
 
 form{
@@ -251,6 +338,7 @@ form{
     color: #38322f;
     text-transform: uppercase;
     padding: 0 0 11px;
+
 }
 
 .special-items{
@@ -266,7 +354,7 @@ form{
     display: flex;
     justify-content: space-between;
     gap:90px;
-    background-color: #FFC0CB;
+    background-color: #DEB887;
 }
 
 .special-glav {
@@ -279,6 +367,15 @@ form{
     size: 48px;
     line-height: 52px;
     text-transform: uppercase;
+}
+
+.item-one img{
+    display: block;
+}
+
+
+.discription {
+
 }
 
 .subsctiption {
@@ -317,6 +414,10 @@ form{
     line-height: 112.4%;
     color: #fff;
 }
+
+.button_field_box{
+    padding-left: 100px;
+}
 .container{
 
 }
@@ -330,8 +431,9 @@ form{
 
 .fields {
     position: relative;
-    padding-left: 900px;
-    padding-bottom: 200px;
+    padding-left: 650px;
+    padding-bottom: 120px;
+    top: 100px;
 }
 
 .text_field {
@@ -366,4 +468,33 @@ form{
     border-style: inset;
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
+}
+
+.basement {
+    text-decoration: none;
+    display: flex;
+}
+
+.basement ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    margin-top: -90px;
+    padding-left: 520px;
+}
+
+
+.basement li {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+    padding-left: 100px;
+}
+
+footer {
+
 }

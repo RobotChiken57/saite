@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <img src="/img/">
+        <img src="/img/logo.svg">
         <nav class="navigation">
             <ul class="nav">
                 <li class="nav-item">Акции</li>
@@ -17,19 +17,26 @@
             </ul>
         </nav>
         <div class="search">
-            <label for="site-search">Search the site:</label>
+            <label for="site-search">Поиск по сайту:</label>
             <input type="search" id="site-search" name="q" aria-label="Search through site content">
-            <button>Search</button>
+            <button>Поиск</button>
         </div>
     </header>
     <section class="infographic">
         <div class="circles">
+            <p>Выбрать дату</p>
             <img src="/img/ellipse.svg" class="ellipse"> 
+            &nbsp;&nbsp;&nbsp;
             <img src="/img/arrow.svg" class="arrow_img">
+            <p>Выбрать регион</p>
             <img src="/img/ellipse.svg" class="ellipse"> 
+            &nbsp;&nbsp;&nbsp;
             <img src="/img/arrow.svg" class="arrow_img">
+            <p class="text">Указать количество участников и сложность</p>
             <img src="/img/ellipse.svg" class="ellipse"> 
+            &nbsp;&nbsp;&nbsp;
             <img src="/img/arrow.svg" class="arrow_img">
+            <p>Оформить заказ</p>
             <img src="/img/ellipse.svg" class="ellipse"> 
         </div> 
     </section>
@@ -49,14 +56,14 @@
                 <p class="name">Елена Наумова</p>
             </div>
             <div>
-                <p class="feedback">Всё очень понравилось! В целом, всё очень здорово, очень хорошая поездка. </p>
+                <p class="feedback">Всё очень понравилось! В целом, всё очень здорово, очень хорошая поездка. Это одно из лучших событий в моей жизни</p>
                 <p class="name">Виктор Баринов</p>
             </div>
         </div>
     </div>
     <div class="search">
+        <h2 class="main_page_title">Выбрать путешествие</h2>
         <section class="main_page_filter">
-            <h2 class="main_page_title">Выбрать путешествие</h2>
             <div class="main_page_filter_content">
                 <form id="main-page-hike-search-form" action="/route" method="get">
                     <div>
@@ -73,8 +80,11 @@
                             <div class="main_page_filter_box_field inline">
                                 <div class="field-routesearch-direction">
                                     <label>Регион</label>
-                                    <select id="routesearch-direction" class="styled select2-hidden-accessible" multiple size="4" data-placeholder="Выберите...">
+                                    <select id="routesearch-direction" class="styled">
                                         <option value="3" data-select2-id="11">Сиродил</option>
+                                        <option value="4" data-select2-id="12">Моровинд</option>
+                                        <option value="5" data-select2-id="13">Скайрим</option>
+                                        <option value="6" data-select2-id="14">Хаммерфелл</option> 
                                     </select>
                                 </div>
                             </div>
@@ -98,13 +108,7 @@
                             </div>
                         </div>
                         <div class="main_page_filter_col third-wid">
-                            <button type="submit" class="btn btn-xxl btn-orange btn-block">
-                                <i class="fa fa-spinner fa-spin display_none"></i>
-                                <i class="fa fa-search fa-lg">
-                                    
-                                </i>
-                                " Найти"
-                            </button>
+                            <button type="submit" class="btn btn-xxl btn-orange btn-block">Найти</button>
                         </div>
                     </div>
                 </form>
@@ -114,7 +118,7 @@
     <h2 class="special_glav">Акции</h2>
     <div class="special">
         <div class="special-items item-one">
-            <img src="/img/snar.png">
+            <img src="/img/snar.jpg">
             <a>Скидка за свое снаряжение</a>
             <div class="discription">
                 <p>Если вы берете в поход свою палатку, отвечающую требованиям похода, и готовы подселить в нее кого-нибудь из участников, то предоставляется скидка</p>
@@ -160,10 +164,11 @@
     </div>
     <footer>
         <p class="tel">8 (800) 555-33-10</p>
-        <nav>
+        <nav class="basement">
             <ul>
-                <li></li>
-                <li></li>
+                <li>Акции</li>
+                <li>Управление броинрованием</li>
+                <li>Поиск</li>
             </ul>
         </nav>
     </footer>
