@@ -13,6 +13,9 @@ html{
 
 }
 
+.navigation{
+
+}
 p{
     display: block;
     margin-block-start: 1em;
@@ -46,12 +49,18 @@ header{
 
 .nav{
     display: flex;
+    padding-top: 10px;
+
 }
 .nav-item{
     display: flex;
     text-decoration: none;
-    margin-left: 100px;
-    font-size: 40px;
+    margin-left: 90px;
+    font-size: 30px;   
+}
+
+a {
+    text-decoration: none;
 }
 
 .infographic{
@@ -92,7 +101,6 @@ header{
     position: relative;
     right: 210px;
     top: 145px;
-
 }
 
 .text {
@@ -497,4 +505,10 @@ form{
 
 footer {
 
+    background-color:#98FB98 ;
+
+}
+
+.tel {
+    color: blue;
 }
